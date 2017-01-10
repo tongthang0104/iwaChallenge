@@ -4,6 +4,7 @@
   "description": "A challenge from Jiff.com",
   "main": "index.js",
   "scripts": {
+    "postinstall": "webpack",
     "start": "node src/server/server.js"
   },
   "author": "",
