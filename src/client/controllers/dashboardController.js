@@ -9,7 +9,6 @@ function dashboardCtrl($scope, services) {
   $scope.fetchPrograms = function() {
     services.getProgram(function(res) {
       $scope.program_blueprints = res.data.program_blueprints;
-      console.log('Response Program:', $scope.program_blueprints);
     });
 
     $scope.fetchGoals();
@@ -18,7 +17,6 @@ function dashboardCtrl($scope, services) {
   $scope.fetchGoals = function() {
     services.getGoals(function(res) {
       $scope.goals = res.data.goals;
-      console.log('Goals:', $scope.goals);
     });
   };
 
