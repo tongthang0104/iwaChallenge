@@ -1,15 +1,18 @@
 <div ng-init="fetchPrograms()">
   <h1 ng-if="!detailed">All Programs</h1>
+  <!-- Navigation bar -->
   <div class="navigation" ng-if="detailed">
     <button class="back" ng-click="showDetail()"><img src="api/angle_left.png" /></button>
     <div>
       <h1>{{selectedProgram.title}}</h1>
     </div>
   </div>
+
+  <!-- List of programs -->
   <div>
     <div ng-if="!detailed" class="container" ng-repeat="program in program_blueprints">
       <ul>
-        <li  ng-click="showDetail(program)">
+        <li ng-click="showDetail(program)">
           <div class="program_wrapper">
             <div class="program_title">
               <img style="background-color: {{program.color === '#ffffff' ? '#50B3D7' : program.color}}" src="{{program.icon_url}}" alt="{{program.title}}">
@@ -20,6 +23,8 @@
         </li>
       </ul>
     </div>
+
+    <!-- Detail View -->
     <detail info="selectedProgram" goals="goals" ng-if="detailed"></detail>
   </div>
 </div>

@@ -1,16 +1,21 @@
 <div class="detailWrapper" ng-init="filterGoal(info)">
+
+  <!-- Program detail -->
+
   <img style="background-color: {{info.color === '#ffffff' ? '#50B3D7' : info.color}}" src="{{info.icon_url}}" alt="Not Found">
   <h2>{{info.title}}</h2>
   <h3>{{info.possible_earnings_description}}</h3>
   <p class="program_des">{{info.description}}</p>
   <p class="program_incentive_des" ng-if="info.incentive_description">{{info.incentive_description}}</p>
+
+  <!-- Goal List -->
   <div class="goalWrapper" ng-if="info.goals.length">
     <table class="goal_table" border="1">
       <thead>
-           <tr>
-              <th style="text-align: center;">Goals</th>
-              <th style="text-align: center;">Value</th>
-            </tr>
+          <tr>
+            <th style="text-align: center;">Goals</th>
+            <th style="text-align: center;">Value</th>
+          </tr>
       </thead>
       <tbody class="currentGoal"  ng-repeat="goal in currentGoals">
         <tr>
@@ -18,7 +23,6 @@
           <td>{{goal.incentive_value}}</td>
         </tr>
       </tbody>
-        <!-- <span class="goal_des">{{goal.description}}</span> <span class="goal_val">{{goal.incentive_value}}</span> -->
     </table>
     <h4>Total Value: {{incentive_value}}</h4>
   </div>

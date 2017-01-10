@@ -22,6 +22,7 @@ function dashboardCtrl($scope, services) {
     });
   };
 
+  // Go to detail view
   $scope.showDetail = function(program) {
     $scope.detailed = !$scope.detailed;
     $scope.selectedProgram = program;

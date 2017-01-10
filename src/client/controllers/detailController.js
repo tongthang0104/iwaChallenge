@@ -6,7 +6,6 @@ function detailViewCtrl($scope) {
   $scope.incentive_value = 0;
 
   $scope.filterGoal = function(program) {
-    console.log('scopegoal:', $scope.goals);
     const currentGoalGuid = program.goals.map(function(el) {
       return el.guid;
     });
@@ -18,7 +17,6 @@ function detailViewCtrl($scope) {
 
       $scope.incentive_value = $scope.getTotalIncentiveValue($scope.currentGoals);
     }
-    console.log('currentGoal:', $scope.currentGoals);
   };
 
   $scope.getTotalIncentiveValue = function(goals) {
