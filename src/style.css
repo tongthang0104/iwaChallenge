@@ -28,11 +28,13 @@ li {
 }
 
 li:hover img {
-  /*border-left: 5px solid red;
-  margin-left: -5px;*/
-  /*color:  blue;*/
   transform: scale(1.15);
 }
+
+/*ul:hover {
+  border-left: 5px solid red;
+  margin-left: -5px;
+}*/
 
 .container {
   width: 100%;
@@ -101,7 +103,7 @@ p {
   margin-top: 20px;
 }
 .detailWrapper {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .program_des {
