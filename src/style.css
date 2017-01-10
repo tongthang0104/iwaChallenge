@@ -139,12 +139,17 @@ thead {
   background-color: #514A3E;
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
+  display: inline-block;
 }
 
 .navigation h1 {
   font-size: 2em;
   text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px
 }
 
 

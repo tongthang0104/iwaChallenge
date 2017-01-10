@@ -2,7 +2,9 @@
   <h1 ng-if="!detailed">All Programs</h1>
   <div class="navigation" ng-if="detailed">
     <button class="back" ng-click="showDetail()"><img src="api/angle_left.png" /></button>
-    <h1>{{selectedProgram.title}}</h1>
+    <div>
+      <h1>{{selectedProgram.title}}</h1>
+    </div>
   </div>
   <div>
     <div ng-if="!detailed" class="container" ng-repeat="program in program_blueprints">
