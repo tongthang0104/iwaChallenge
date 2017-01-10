@@ -9,8 +9,10 @@ function dashboardCtrl($scope, services) {
   $scope.fetchPrograms = function() {
     services.getProgram(function(res) {
       $scope.program_blueprints = res.data.program_blueprints;
+      $scope.program_blueprints.sort(function(a, b) {
+        return a.display_order - b.display_order;
+      });
     });
-
     $scope.fetchGoals();
   };
 
