@@ -76,13 +76,13 @@ p {
 }
 
 .back {
+  margin-top: 5%;
   float: left;
 }
 
 .back img {
   width: 30px;
   height: 30px;
-  margin-top: 50%
 }
 
 .program_wrapper img {
@@ -123,5 +123,13 @@ p {
 
   .program_type {
     margin-top: 5%;
+  }
+
+  .navigation h1 {
+    display: inline-block;
+  }
+
+  .back {
+    margin: 30px;
   }
 }
