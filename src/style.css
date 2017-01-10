@@ -56,8 +56,10 @@ li:hover img {
 }
 
 .program_title p {
-  width: 11em;
+  width: 12em;
   word-wrap: break-word;
+  padding-right: 20px;
+  margin-top: 10px;
 }
 
 .program_type {
@@ -76,7 +78,8 @@ p {
 }
 
 .back {
-  margin-top: 5%;
+  height: 40px;
+  margin-top: 3%;
   float: left;
 }
 
@@ -98,7 +101,7 @@ p {
   margin-top: 20px;
 }
 .detailWrapper {
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 .detailWrapper p {
