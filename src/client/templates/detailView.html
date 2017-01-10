@@ -2,8 +2,8 @@
   <img style="background-color: {{info.color === '#ffffff' ? '#50B3D7' : info.color}}" src="{{info.icon_url}}" alt="Not Found">
   <h2>{{info.title}}</h2>
   <h3>{{info.possible_earnings_description}}</h3>
-  <p style="color: #FFA07A;">{{info.description}}</p>
-  <p ng-if="info.incentive_description">{{info.incentive_description}}</p>
+  <p class="program_des">{{info.description}}</p>
+  <p class="program_incentive_des" ng-if="info.incentive_description">{{info.incentive_description}}</p>
   <div class="goalWrapper" ng-if="info.goals.length">
     <table class="goal_table" border="1">
       <thead>
