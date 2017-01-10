@@ -2,13 +2,24 @@
   <img style="background-color: {{info.color === '#ffffff' ? '#50B3D7' : info.color}}" src="{{info.icon_url}}" alt="Not Found">
   <h2>{{info.title}}</h2>
   <h3>{{info.possible_earnings_description}}</h3>
-  <p>{{info.description}}</p>
+  <p style="color: #FFA07A;">{{info.description}}</p>
   <p ng-if="info.incentive_description">{{info.incentive_description}}</p>
   <div class="goalWrapper" ng-if="info.goals.length">
-    <h3>Goals</h3>
-    <div class="currentGoal"  ng-repeat="goal in currentGoals">
-      {{goal.description}} - {{goal.incentive_value}}
-    </div>
+    <table class="goal_table" border="1">
+      <thead>
+           <tr>
+              <th style="text-align: center;">Goals</th>
+              <th style="text-align: center;">Value</th>
+            </tr>
+      </thead>
+      <tbody class="currentGoal"  ng-repeat="goal in currentGoals">
+        <tr>
+          <td>{{goal.description}}</td>
+          <td>{{goal.incentive_value}}</td>
+        </tr>
+      </tbody>
+        <!-- <span class="goal_des">{{goal.description}}</span> <span class="goal_val">{{goal.incentive_value}}</span> -->
+    </table>
     <h4>Total Value: {{incentive_value}}</h4>
   </div>
 </div>

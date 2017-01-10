@@ -106,6 +106,28 @@ p {
 
 .detailWrapper p {
   word-wrap: break-word;
+  font-size: 20px;
+}
+
+.goal_des {
+
+}
+
+.goal_val {
+
+}
+
+.goal_table {
+  margin: 0 auto;
+  font-size: 17px;
+  width: 50%;
+  margin-bottom: 10px;
+  border-bottom: 1px white;
+}
+
+thead {
+  font-size: 20px;
+  color: #DD5B54;
 }
 
 .navigation {
@@ -119,6 +141,8 @@ p {
   font-size: 2em;
   text-align: center;
 }
+
+
 @media screen and (min-width: 768px) {
   .container {
     width: 40%;
