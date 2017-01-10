@@ -1,0 +1,14 @@
+<div class="detailWrapper" ng-init="filterGoal(info)">
+  <img style="background-color: {{info.color === '#ffffff' ? '#50B3D7' : info.color}}" src="{{info.icon_url}}" alt="Not Found">
+  <h2>{{info.title}}</h2>
+  <h3>{{info.possible_earnings_description}}</h3>
+  <p>{{info.description}}</p>
+  <p ng-if="info.incentive_description">{{info.incentive_description}}</p>
+  <div class="goalWrapper" ng-if="info.goals.length">
+    <h3>Goals</h3>
+    <div class="currentGoal"  ng-repeat="goal in currentGoals">
+      {{goal.description}} - {{goal.incentive_value}}
+    </div>
+    <h4>Total Value: {{incentive_value}}</h4>
+  </div>
+</div>
